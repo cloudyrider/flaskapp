@@ -7,3 +7,6 @@ def home():
 
 def test():
   continue
+
+def test2():
+  continue
