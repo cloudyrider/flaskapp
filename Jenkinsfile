@@ -1,4 +1,3 @@
-##### Jenkinsfile 환경변수 설정
 pipeline {
 	agent any
 	environment {
