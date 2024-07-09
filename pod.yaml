@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: flaskapp
-    image: 도커허브계정/flaskapp:latest
+    image: cloudyrider/flaskapp:latest
     ports:
     - containerPort: 5000
   imagePullSecrets:
