@@ -6,9 +6,8 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONWARNINGS="ignore:ResourceWarning"
 
-# requirements.txt 파일 복사 및 pip 업데이트 및 설치
+# requirements.txt 파일 복사 및 의존성 설치
 COPY requirements.txt requirements.txt
-RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # 애플리케이션 파일 복사
