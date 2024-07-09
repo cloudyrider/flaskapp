@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: flaskapp-pod
+  name: flaskpod
 spec:
   containers:
-  - name: flaskapp
-    image: flaskapp:v1.0.0
+  - name: flask
+    image: cloudyrider/flaskapp:latest
     ports:
     - containerPort: 5000
