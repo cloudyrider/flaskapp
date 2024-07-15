@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: flaskpod
+  labels:
+    app: flaskapp
 spec:
   containers:
   - name: flaskapp
     image: cloudyrider/flaskapp:latest
     ports:
     - containerPort: 5000
-  imagePullSecrets:
-  - name: docker-pull-secret
